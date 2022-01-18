@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="alpha">a</div>
+        <div id="beta">b</div>
+        <div id="gamma">g</div>
+    
+    <script>
+    window.addEventListener('deviceorientation', function(event) {
+        var alpha = event.alpha;
+        var beta = event.beta;
+        var gamma = event.gamma;
+    
+        document.getElementById("alpha").innerHTML = alpha;
+        document.getElementById("beta").innerHTML = beta;
+        document.getElementById("gamma").innerHTML = gamma;
+    
+    }, false);
+    </script>
+</body>
+</html>
